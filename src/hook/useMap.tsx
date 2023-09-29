@@ -9,6 +9,7 @@ import useLocation from "./useLocation";
 import { Polygon } from "geojson";
 import { axios } from "../utils/axios";
 import { Flip, Zoom, toast } from "react-toastify";
+import { log } from "console";
 
 let arrayPolygon: Polygon | turf.MultiPolygon = {
     type: "Polygon",
@@ -43,6 +44,7 @@ export const useMap = (container: React.RefObject<HTMLDivElement>) => {
             });
             if (arrayPolygon.coordinates[0].length > 0) {
                 const isInside = turf.booleanPointInPolygon(userLocation, arrayPolygon);
+                console.log(isInside)
                 isInside
                     ? toast.success("Point is inside the polygon.", {
                         position: "bottom-left",
@@ -98,7 +100,6 @@ export const useMap = (container: React.RefObject<HTMLDivElement>) => {
                 var ids = draw.add(e.features.at(-1));
                 diameter > 30
                     ? (draw.delete(ids),
-                        arrayPolygon.coordinates = [],
                         toast.error(
                             "You have defined a shape whose diameter is more than 30",
                             {

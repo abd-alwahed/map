@@ -29,7 +29,7 @@ const App = () => {
         position="top-left"
         autoClose={0.5}
         hideProgressBar={false}
-        limit={1}
+
         closeOnClick
         rtl={false}
         pauseOnFocusLoss

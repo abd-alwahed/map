@@ -1,0 +1,106 @@
+/* Styling for the UserLocations component */
+.UserLocations {
+  width: 80%;
+
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+/* Styling for the list of user locations */
+.list-locations {
+  margin: 20px 20px;
+  width: 50%;
+}
+
+.list-locations h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.list-locations ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-locations li {
+  margin-bottom: 5px;
+}
+
+/* Styling for the last known user location */
+.last-location {
+  margin-top: 20px;
+  width: 50%;
+}
+
+.last-location h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the login form (LoginForm component) */
+.login-form {
+  margin-top: 20px;
+}
+
+/* Styling for buttons */
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.list-item {
+  margin-bottom: 15px;
+  /* Increase spacing between list items */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-item:hover {
+  background-color: #5ea3ec;
+}
+
+.list-item p {
+  margin: 0;
+  /* Remove default margins */
+}
+
+.list-item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}

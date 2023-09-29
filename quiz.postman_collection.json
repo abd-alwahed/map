@@ -1,0 +1,137 @@
+{
+  "info": {
+    "_postman_id": "792be896-e2dd-408a-bb39-737d966a3d4c",
+    "name": "quiz",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "login_user",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"tarek\",\r\n    \"password\":\"r123o123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://tmbo.app/test/api/login_user",
+          "protocol": "https",
+          "host": ["tmbo", "app"],
+          "path": ["test", "api", "login_user"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "store_location",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMzRiYTY1NTZlN2Q3NDU3OGRjMDhiYWMzYTU2M2ExMDM1ZTNkYmRkOGU1Mzc5NGY5YzQxY2EwYjk4ZTg1ODc1NjI0YmQzNmJkOTZhNGU0MmYiLCJpYXQiOjE2OTU3MzkwMjguMzI4OTM0OTA3OTEzMjA4MDA3ODEyNSwibmJmIjoxNjk1NzM5MDI4LjMyODk0MjA2MDQ3MDU4MTA1NDY4NzUsImV4cCI6MTcyNzM2MTQyOC4yOTAyNzYwNTA1Njc2MjY5NTMxMjUsInN1YiI6IjM0Iiwic2NvcGVzIjpbXX0.kRrKPPLPhAtXBOjHIaZccTTItiv2SxdkNlSCKsPVrc67kJWC4dM7NpAMqB72O6kIqlx9VhVn7M3MjGikT0nCttHzEZRdEEVyiyQDBwOKls741aTqc18g2Dyd9zfQXIsYJS4ZIpyJdHiaSkDc9m-Gjq24-et-Ql42eNMS8Fe9ui7P7w54yKOdkfNCZ6ShmwT-x_3WtWutio27tc5SQ-WejHynGAIbIrMzxFosw24oKCajltwSHf0Dbkt35IIz_8KKCMyEZi5fmWqFB78kLAueVE_JX8ONfq1GkyMMAYRQpo6xKURd3Zp4JSS9RD5pcS0SQDtBhol2kR1kIdBdKhJLZ_o7UUBRhqMmHfx0sCYvdMNaGY4uH3nbZqhQUV-ldzi29wqFORssQx_J0hwx2IpTDT-67NPADmEwlkef2Vq8oZIrU4JYuBlTuX4NsdwcLQfiq8M5xhGQHlOjFtGrYiBMIFMpNEaQ2h5-lICqm7ni5m4CtRBWZOqtx9EIHcoQcqnG-BKk67e42WgKYDUccKN2AToGdib08V9Rl_u_ySBhzmTY0e2VaIHP8QNjl2GeWC51VsN_LgjeFULbUd0JXpLkambLIuVlQN7Q7Si7Le9vFHGPMir-87-DBU9qJnOsbYy6dhGzARh-sGUpkGxQs6dDiWw-z1MuO34lrfIVo_UOMGg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"long\":\"12,212\",\r\n    \"lat\":\"12,212\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://tmbo.app/test/api/store_location",
+          "protocol": "https",
+          "host": ["tmbo", "app"],
+          "path": ["test", "api", "store_location"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "start_auth",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMzRiYTY1NTZlN2Q3NDU3OGRjMDhiYWMzYTU2M2ExMDM1ZTNkYmRkOGU1Mzc5NGY5YzQxY2EwYjk4ZTg1ODc1NjI0YmQzNmJkOTZhNGU0MmYiLCJpYXQiOjE2OTU3MzkwMjguMzI4OTM0OTA3OTEzMjA4MDA3ODEyNSwibmJmIjoxNjk1NzM5MDI4LjMyODk0MjA2MDQ3MDU4MTA1NDY4NzUsImV4cCI6MTcyNzM2MTQyOC4yOTAyNzYwNTA1Njc2MjY5NTMxMjUsInN1YiI6IjM0Iiwic2NvcGVzIjpbXX0.kRrKPPLPhAtXBOjHIaZccTTItiv2SxdkNlSCKsPVrc67kJWC4dM7NpAMqB72O6kIqlx9VhVn7M3MjGikT0nCttHzEZRdEEVyiyQDBwOKls741aTqc18g2Dyd9zfQXIsYJS4ZIpyJdHiaSkDc9m-Gjq24-et-Ql42eNMS8Fe9ui7P7w54yKOdkfNCZ6ShmwT-x_3WtWutio27tc5SQ-WejHynGAIbIrMzxFosw24oKCajltwSHf0Dbkt35IIz_8KKCMyEZi5fmWqFB78kLAueVE_JX8ONfq1GkyMMAYRQpo6xKURd3Zp4JSS9RD5pcS0SQDtBhol2kR1kIdBdKhJLZ_o7UUBRhqMmHfx0sCYvdMNaGY4uH3nbZqhQUV-ldzi29wqFORssQx_J0hwx2IpTDT-67NPADmEwlkef2Vq8oZIrU4JYuBlTuX4NsdwcLQfiq8M5xhGQHlOjFtGrYiBMIFMpNEaQ2h5-lICqm7ni5m4CtRBWZOqtx9EIHcoQcqnG-BKk67e42WgKYDUccKN2AToGdib08V9Rl_u_ySBhzmTY0e2VaIHP8QNjl2GeWC51VsN_LgjeFULbUd0JXpLkambLIuVlQN7Q7Si7Le9vFHGPMir-87-DBU9qJnOsbYy6dhGzARh-sGUpkGxQs6dDiWw-z1MuO34lrfIVo_UOMGg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://tmbo.app/test/api/start_auth",
+          "protocol": "https",
+          "host": ["tmbo", "app"],
+          "path": ["test", "api", "start_auth"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "list_location",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMzRiYTY1NTZlN2Q3NDU3OGRjMDhiYWMzYTU2M2ExMDM1ZTNkYmRkOGU1Mzc5NGY5YzQxY2EwYjk4ZTg1ODc1NjI0YmQzNmJkOTZhNGU0MmYiLCJpYXQiOjE2OTU3MzkwMjguMzI4OTM0OTA3OTEzMjA4MDA3ODEyNSwibmJmIjoxNjk1NzM5MDI4LjMyODk0MjA2MDQ3MDU4MTA1NDY4NzUsImV4cCI6MTcyNzM2MTQyOC4yOTAyNzYwNTA1Njc2MjY5NTMxMjUsInN1YiI6IjM0Iiwic2NvcGVzIjpbXX0.kRrKPPLPhAtXBOjHIaZccTTItiv2SxdkNlSCKsPVrc67kJWC4dM7NpAMqB72O6kIqlx9VhVn7M3MjGikT0nCttHzEZRdEEVyiyQDBwOKls741aTqc18g2Dyd9zfQXIsYJS4ZIpyJdHiaSkDc9m-Gjq24-et-Ql42eNMS8Fe9ui7P7w54yKOdkfNCZ6ShmwT-x_3WtWutio27tc5SQ-WejHynGAIbIrMzxFosw24oKCajltwSHf0Dbkt35IIz_8KKCMyEZi5fmWqFB78kLAueVE_JX8ONfq1GkyMMAYRQpo6xKURd3Zp4JSS9RD5pcS0SQDtBhol2kR1kIdBdKhJLZ_o7UUBRhqMmHfx0sCYvdMNaGY4uH3nbZqhQUV-ldzi29wqFORssQx_J0hwx2IpTDT-67NPADmEwlkef2Vq8oZIrU4JYuBlTuX4NsdwcLQfiq8M5xhGQHlOjFtGrYiBMIFMpNEaQ2h5-lICqm7ni5m4CtRBWZOqtx9EIHcoQcqnG-BKk67e42WgKYDUccKN2AToGdib08V9Rl_u_ySBhzmTY0e2VaIHP8QNjl2GeWC51VsN_LgjeFULbUd0JXpLkambLIuVlQN7Q7Si7Le9vFHGPMir-87-DBU9qJnOsbYy6dhGzARh-sGUpkGxQs6dDiWw-z1MuO34lrfIVo_UOMGg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://tmbo.app/test/api/list_location",
+          "protocol": "https",
+          "host": ["tmbo", "app"],
+          "path": ["test", "api", "list_location"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "last_location",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiMzRiYTY1NTZlN2Q3NDU3OGRjMDhiYWMzYTU2M2ExMDM1ZTNkYmRkOGU1Mzc5NGY5YzQxY2EwYjk4ZTg1ODc1NjI0YmQzNmJkOTZhNGU0MmYiLCJpYXQiOjE2OTU3MzkwMjguMzI4OTM0OTA3OTEzMjA4MDA3ODEyNSwibmJmIjoxNjk1NzM5MDI4LjMyODk0MjA2MDQ3MDU4MTA1NDY4NzUsImV4cCI6MTcyNzM2MTQyOC4yOTAyNzYwNTA1Njc2MjY5NTMxMjUsInN1YiI6IjM0Iiwic2NvcGVzIjpbXX0.kRrKPPLPhAtXBOjHIaZccTTItiv2SxdkNlSCKsPVrc67kJWC4dM7NpAMqB72O6kIqlx9VhVn7M3MjGikT0nCttHzEZRdEEVyiyQDBwOKls741aTqc18g2Dyd9zfQXIsYJS4ZIpyJdHiaSkDc9m-Gjq24-et-Ql42eNMS8Fe9ui7P7w54yKOdkfNCZ6ShmwT-x_3WtWutio27tc5SQ-WejHynGAIbIrMzxFosw24oKCajltwSHf0Dbkt35IIz_8KKCMyEZi5fmWqFB78kLAueVE_JX8ONfq1GkyMMAYRQpo6xKURd3Zp4JSS9RD5pcS0SQDtBhol2kR1kIdBdKhJLZ_o7UUBRhqMmHfx0sCYvdMNaGY4uH3nbZqhQUV-ldzi29wqFORssQx_J0hwx2IpTDT-67NPADmEwlkef2Vq8oZIrU4JYuBlTuX4NsdwcLQfiq8M5xhGQHlOjFtGrYiBMIFMpNEaQ2h5-lICqm7ni5m4CtRBWZOqtx9EIHcoQcqnG-BKk67e42WgKYDUccKN2AToGdib08V9Rl_u_ySBhzmTY0e2VaIHP8QNjl2GeWC51VsN_LgjeFULbUd0JXpLkambLIuVlQN7Q7Si7Le9vFHGPMir-87-DBU9qJnOsbYy6dhGzARh-sGUpkGxQs6dDiWw-z1MuO34lrfIVo_UOMGg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://tmbo.app/test/api/last_location",
+          "protocol": "https",
+          "host": ["tmbo", "app"],
+          "path": ["test", "api", "last_location"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
